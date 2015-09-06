@@ -18,7 +18,6 @@
 		1D40373517E740210061FF18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D40373417E740210061FF18 /* Default-568h@2x.png */; };
 		1D40373817E740210061FF18 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D40373617E740210061FF18 /* MainStoryboard.storyboard */; };
 		1D40373B17E740210061FF18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D40373A17E740210061FF18 /* ViewController.m */; };
-		1D40374317E740210061FF18 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40374217E740210061FF18 /* SenTestingKit.framework */; };
 		1D40374417E740210061FF18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40371E17E740210061FF18 /* UIKit.framework */; };
 		1D40374517E740210061FF18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40372017E740210061FF18 /* Foundation.framework */; };
 		1D40374D17E740210061FF18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D40374B17E740210061FF18 /* InfoPlist.strings */; };
@@ -59,7 +58,6 @@
 		1D40373917E740210061FF18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1D40373A17E740210061FF18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1D40374117E740210061FF18 /* PinYin4ObjcExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinYin4ObjcExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D40374217E740210061FF18 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1D40374A17E740210061FF18 /* PinYin4ObjcExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinYin4ObjcExampleTests-Info.plist"; sourceTree = "<group>"; };
 		1D40374C17E740210061FF18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1D40374E17E740210061FF18 /* PinYin4ObjcExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinYin4ObjcExampleTests.h; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D40374317E740210061FF18 /* SenTestingKit.framework in Frameworks */,
 				1D40374417E740210061FF18 /* UIKit.framework in Frameworks */,
 				1D40374517E740210061FF18 /* Foundation.framework in Frameworks */,
 			);
@@ -128,7 +125,6 @@
 				1D40371E17E740210061FF18 /* UIKit.framework */,
 				1D40372017E740210061FF18 /* Foundation.framework */,
 				1D40372217E740210061FF18 /* CoreGraphics.framework */,
-				1D40374217E740210061FF18 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,7 +248,7 @@
 			name = PinYin4ObjcExampleTests;
 			productName = PinYin4ObjcExampleTests;
 			productReference = 1D40374117E740210061FF18 /* PinYin4ObjcExampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -260,7 +256,8 @@
 		1D40371317E740210061FF18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0640;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = kimziv;
 			};
 			buildConfigurationList = 1D40371617E740210061FF18 /* Build configuration list for PBXProject "PinYin4ObjcExample" */;
@@ -410,7 +407,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -434,7 +431,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -446,7 +443,7 @@
 				GCC_PREFIX_HEADER = "PinYin4ObjcExample/PinYin4ObjcExample-Prefix.pch";
 				INFOPLIST_FILE = "PinYin4ObjcExample/PinYin4ObjcExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -458,7 +455,7 @@
 				GCC_PREFIX_HEADER = "PinYin4ObjcExample/PinYin4ObjcExample-Prefix.pch";
 				INFOPLIST_FILE = "PinYin4ObjcExample/PinYin4ObjcExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,13 +467,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinYin4ObjcExample/PinYin4ObjcExample-Prefix.pch";
 				INFOPLIST_FILE = "PinYin4ObjcExampleTests/PinYin4ObjcExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -487,13 +484,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinYin4ObjcExample/PinYin4ObjcExample-Prefix.pch";
 				INFOPLIST_FILE = "PinYin4ObjcExampleTests/PinYin4ObjcExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

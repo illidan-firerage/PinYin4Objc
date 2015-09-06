@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 kimziv. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface PinYin4ObjcExampleTests : SenTestCase
+@interface PinYin4ObjcExampleTests : XCTestCase
 
 @end

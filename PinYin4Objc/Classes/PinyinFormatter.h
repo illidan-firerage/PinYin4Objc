@@ -16,6 +16,7 @@
                 withHanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)outputFormat;
 + (NSString *)convertToneNumber2ToneMarkWithNSString:(NSString *)pinyinStr;
 - (id)init;
+
 @end
 
 #endif // _PinyinFormatter_H_

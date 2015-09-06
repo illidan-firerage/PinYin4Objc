@@ -39,7 +39,7 @@
       NSTimeInterval endTime=[[NSDate date] timeIntervalSince1970];
       NSTimeInterval totalTime=endTime-startTime;
       _timeLb.text=[NSString stringWithFormat:@"Total Time:%fs",totalTime];
-      _wordsLb.text=[NSString stringWithFormat:@"Total Words:%i characters",sourceText.length];
+      _wordsLb.text=[NSString stringWithFormat:@"Total Words:%lu characters",(unsigned long)sourceText.length];
       _outputTv.text=pinYin;
 
   }];

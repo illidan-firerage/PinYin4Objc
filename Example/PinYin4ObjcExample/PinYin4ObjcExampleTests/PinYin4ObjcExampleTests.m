@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in PinYin4ObjcExampleTests");
+    XCTFail(@"Unit tests are not implemented yet in PinYin4ObjcExampleTests");
 }
 
 @end
