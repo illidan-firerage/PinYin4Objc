@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134791771B9D541400F01872 /* NSString+FRPinYinUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 134791761B9D541400F01872 /* NSString+FRPinYinUtils.m */; };
 		1D40371F17E740210061FF18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40371E17E740210061FF18 /* UIKit.framework */; };
 		1D40372117E740210061FF18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40372017E740210061FF18 /* Foundation.framework */; };
 		1D40372317E740210061FF18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40372217E740210061FF18 /* CoreGraphics.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		134791751B9D541400F01872 /* NSString+FRPinYinUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FRPinYinUtils.h"; sourceTree = "<group>"; };
+		134791761B9D541400F01872 /* NSString+FRPinYinUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FRPinYinUtils.m"; sourceTree = "<group>"; };
 		1D40371B17E740210061FF18 /* PinYin4ObjcExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinYin4ObjcExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D40371E17E740210061FF18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1D40372017E740210061FF18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,7 +60,7 @@
 		1D40373717E740210061FF18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1D40373917E740210061FF18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1D40373A17E740210061FF18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1D40374117E740210061FF18 /* PinYin4ObjcExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinYin4ObjcExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D40374117E740210061FF18 /* PinYin4ObjcExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PinYin4ObjcExampleTests.octest; path = PinYin4ObjcExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D40374A17E740210061FF18 /* PinYin4ObjcExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinYin4ObjcExampleTests-Info.plist"; sourceTree = "<group>"; };
 		1D40374C17E740210061FF18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1D40374E17E740210061FF18 /* PinYin4ObjcExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinYin4ObjcExampleTests.h; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				1D40378317E741D20061FF18 /* PinyinHelper.h */,
 				1D40378417E741D20061FF18 /* PinyinHelper.m */,
 				1D40378E17E742940061FF18 /* PinYin4Objc.h */,
+				134791751B9D541400F01872 /* NSString+FRPinYinUtils.h */,
+				134791761B9D541400F01872 /* NSString+FRPinYinUtils.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				1D40372B17E740210061FF18 /* main.m in Sources */,
 				1D40372F17E740210061FF18 /* AppDelegate.m in Sources */,
 				1D40373B17E740210061FF18 /* ViewController.m in Sources */,
+				134791771B9D541400F01872 /* NSString+FRPinYinUtils.m in Sources */,
 				1D40378717E741D20061FF18 /* ChineseToPinyinResource.m in Sources */,
 				1D40378817E741D20061FF18 /* HanyuPinyinOutputFormat.m in Sources */,
 				1D40378917E741D20061FF18 /* NSString+PinYin4Cocoa.m in Sources */,

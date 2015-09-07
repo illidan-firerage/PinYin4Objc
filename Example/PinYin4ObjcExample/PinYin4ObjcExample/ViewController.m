@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "PinYin4Objc.h"
+#import "NSString+FRPinYinUtils.h"
+
 @interface ViewController ()
 {
     IBOutlet UITextField *_inputTf;
@@ -24,6 +26,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@", [@"中国欢迎你 Welcome" pinYinString]);
+    NSLog(@"%@", [@"中国欢迎你 Welcome" uppercasePinYinString]);
+    NSLog(@"%@", [@"中国欢迎你 Welcome" lowercasePinYinString]);
 }
 
 -(IBAction)doClick:(id)sender
